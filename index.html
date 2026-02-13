@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Our Valentine Quiz 💘</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="card">
+
+<div class="page active" id="page1">
+    <h1>Will you be my Valentine? 💖</h1>
+    <p>Be honest 😅</p>
+    <button class="start-btn" onclick="show('page2')">Yes 💘</button>
+    <button class="no-btn" id="noBtn">No 😈</button>
+</div>
+
+<div class="page" id="page2">
+    <h1>I got a lil surprise for you 😌🎁</h1>
+    <p>First… let’s see how well you remember us.</p>
+    <button class="start-btn" onclick="startQuiz()">Start the quiz 💌</button>
+</div>
+
+<div class="page quiz" id="q1">
+    <h1>Q 1 💭</h1>
+    <p>Where did we first properly talk for hours?</p>
+    <button class="option" data-correct="false">At a restaurant</button>
+    <button class="option" data-correct="true">In a Taxi</button>
+    <button class="option" data-correct="false">On the Street</button>
+    <button class="option" data-correct="false">At the mall</button>
+    <div class="feedback">Smart, that’s why I love you 💓</div>
+    <div class="feedback-wrong">Haha, close 😅 but I still love you.</div>
+</div>
+
+<div class="page quiz" id="q2">
+    <h1>Q 2 💬</h1>
+    <p>Who is always right in an argument?</p>
+    <button class="option" data-correct="true">Me</button>
+    <button class="option" data-correct="true">Tlou Kingston Lephalala</button>
+    <button class="option" data-correct="true">Always Me</button>
+    <button class="option" data-correct="true">Younger Brother of Ken and Jack Lephalala</button>
+    <div class="feedback">Smart, that’s why I love you 💓</div>
+    <div class="feedback-wrong">Nope 😄 but points for trying.</div>
+</div>
+
+<div class="page quiz" id="q3">
+    <h1>Q 3 📸</h1>
+    <p>Which picture was taken on our first date?</p>
+    <div class="img-question">
+        <img src="assets/img/Cwe1.jpeg" data-correct="true" alt="Option 1">
+        <img src="assets/img/Cwe2.jpeg" data-correct="false" alt="Option 2">
+    </div>
+    <div class="feedback">Smart, that’s why I love you </div>
+    <div class="feedback-wrong">Almost 😅 but the other one is special.</div>
+</div>
+
+<div class="page quiz" id="q4">
+    <h1>Q 4 💞</h1>
+    <p>What do I love most about you?</p>
+    <button class="option" data-correct="false">Your eyes👀</button>
+    <button class="option" data-correct="false">Your Bhunda🍑</button>
+    <button class="option" data-correct="false">Your Brains🧠</button>
+    <button class="option" data-correct="true">All of it</button>
+    <div class="feedback">Smart, that’s why I love you 💓</div>
+    <div class="feedback-wrong">Still cute… but not quite 😉</div>
+</div>
+
+<div class="page" id="final">
+    <h1>My surprise for you 🌹</h1>
+    <p>Here’s what I planned for us…</p>
+    <p>14 Feb 2026</p>
+    <p>18:15</p>
+    <img src="assets/img/rsvp.jpeg" class="final-img" alt="Dinner reservation">
+    <p style="margin-top:.6rem">Happy Valentine’s Day ❤️</p>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
