@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download test</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: #f3f4f6;
+      font-family: Arial, sans-serif;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.1rem;
+      border-radius: 6px;
+      background: #2563eb;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 150ms ease;
+    }
+
+    .download-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .download-btn:focus-visible {
+      outline: 3px solid #93c5fd;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <a class="download-btn" href="assets/img/test" download>
+    <span aria-hidden="true">↓</span>
+    Download my test
+  </a>
+</body>
+</html>
